@@ -1,0 +1,79 @@
+/*NAV Y HEADER IMAGENES*/
+.nav__logo {
+    width:  130px;
+    height: auto;
+    margin: 20px;
+}
+
+.estilo__imgbackground {
+    background-repeat: no-repeat;
+    object-fit: cover;
+    align-items: center;
+    flex-direction: column;
+    background-color: #00000049;
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    color: $color-fonts;
+    height: $height-nav;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.caja__header {
+    background-image: url(../img/principal.webp);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.nuevo__caja {
+    background-image: url(../img/nuevo-mobile.jpg);
+    height: $height-nav;
+    background-position: center;
+    margin: $margin-1;
+}
+
+.accesorios__caja {
+    background-image: url(../img/accesorios-img2-mobile.jpg);
+    height: $height-nav;
+    background-position: center;
+    margin: $margin-1;
+}
+
+.celulares__caja {
+    background-image: url(../img/tienda-celulares-mobile.jpg);
+    height: 300px;
+    background-position: left bottom;
+    background-attachment: scroll;
+    margin: $margin-1;
+}
+
+.header__cajacelulares {
+    background-image: url(../img/principal__celulares.webp);
+    background-attachment: fixed;
+
+}
+
+.header__cajaaccesorios {
+    background-image: url(../img/accesorios-img.webp);
+    background-attachment: fixed;
+}
+
+.header__cajacontacto {
+    background-image: url(../img/contacto-img.jpg);
+    background-attachment: fixed;
+}
+
+.header__cajacarrito {
+    background-image: url(../img/carrito-img.jpg);
+    background-attachment: fixed;
+}
+
+.header__cajaheight {
+    height: $height-nav;
+}
