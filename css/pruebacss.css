@@ -30,13 +30,13 @@
 
 .nuevo__caja {
   background-image: url(../img/nuevo-mobile.jpg);
-  height: 100vh;
+  height: 200px;
   background-position: center;
   margin: 32px; }
 
 .accesorios__caja {
   background-image: url(../img/accesorios-img2-mobile.jpg);
-  height: 100vh;
+  height: 200px;
   background-position: center;
   margin: 32px; }
 
@@ -115,7 +115,7 @@ footer {
 
 .div__h1 p {
   font-size: 16px;
-  color: #b7b7b7; }
+  color: #c6c6c6; }
 
 @media screen and (min-width: 780px) {
   .celulares__caja {
@@ -132,7 +132,7 @@ footer {
     font-size: 25px;
     color: #b7b7b7; }
   form {
-    margin: 0 150px 0 150px; } }
+    margin: 0 200px 0 200px; } }
 
 @media screen and (min-width: 992px) {
   .nav__collapse {
