@@ -5,7 +5,7 @@
   margin: 20px;
 }
 
-.estilo__imgbackground {
+.estilo__imgbackground, .headernavsec {
   background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
@@ -31,14 +31,14 @@
   text-align: center;
 }
 
-.caja__header {
-  background-image: url(../img/principal.webp);
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  text-align: center;
+.headernavsec {
   background-attachment: fixed;
-  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.caja__header {
+  height: 100vh;
+  background-attachment: fixed;
 }
 
 .nuevo__caja {
@@ -63,28 +63,24 @@
   margin: 32px;
 }
 
-.header__cajacelulares {
-  background-image: url(../img/principal__celulares.webp);
-  background-attachment: fixed;
+.cajaindex-header {
+  background-image: url(../img/cajaindex.jpg);
 }
 
-.header__cajaaccesorios {
-  background-image: url(../img/accesorios-img.webp);
-  background-attachment: fixed;
+.cajacelulares-header {
+  background-image: url(../img/cajacelulares.jpg);
 }
 
-.header__cajacontacto {
-  background-image: url(../img/contacto-img.jpg);
-  background-attachment: fixed;
+.cajaaccesorios-header {
+  background-image: url(../img/cajaaccesorios.jpg);
 }
 
-.header__cajacarrito {
-  background-image: url(../img/carrito-img.jpg);
-  background-attachment: fixed;
+.cajacontacto-header {
+  background-image: url(../img/cajacontacto.jpg);
 }
 
-.header__cajaheight {
-  height: 100vh;
+.cajacarrito-header {
+  background-image: url(../img/cajacarrito.jpg);
 }
 
 /*GENERALES*/
@@ -118,7 +114,19 @@ footer {
 }
 
 footer span {
-  font-size: 12px;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  footer span {
+    font-size: calc( 16px +  num(12px)-num(16px) *  (100vw - 768px) /  num(1024px)-num(768px));
+  }
+}
+
+@media (min-width: 1024px) {
+  footer span {
+    font-size: 12px;
+  }
 }
 
 /* SERVICIOS*/
@@ -157,12 +165,39 @@ footer span {
 }
 
 .div__h1 h1 {
-  font-size: 30px;
+  font-size: 32px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .div__h1 h1 {
+    font-size: calc( 32px +  num(40px)-num(32px) *  (100vw - 768px) /  num(1024px)-num(768px));
+  }
+}
+
+@media (min-width: 1024px) {
+  .div__h1 h1 {
+    font-size: 40px;
+  }
 }
 
 .div__h1 p {
-  font-size: 16px;
   color: #c6c6c6;
+}
+
+.div__h1 p {
+  font-size: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .div__h1 p {
+    font-size: calc( 20px +  num(25px)-num(20px) *  (100vw - 768px) /  num(1024px)-num(768px));
+  }
+}
+
+@media (min-width: 1024px) {
+  .div__h1 p {
+    font-size: 25px;
+  }
 }
 
 td img {
@@ -180,15 +215,8 @@ td img {
   .accesorios__caja {
     background-image: url(../img/accesorios-img2.jpg);
   }
-  .header__cajaheight {
+  .headernavsec {
     height: 50vh;
-  }
-  .div__h1 h1 {
-    font-size: 40px;
-  }
-  .div__h1 p {
-    font-size: 25px;
-    color: #b7b7b7;
   }
   form {
     margin: 0 200px 0 200px;

@@ -12,24 +12,15 @@
         background-image: url(../img/accesorios-img2.jpg);
     }
 
-    .header__cajaheight {
+    .headernavsec {
         height: 50vh;
     }
 
-    .div__h1 {
-        h1 {
-            font-size: 40px;
-        }
-        p{
-            font-size: 25px;
-            color: #b7b7b7
-        }
-    }
-
-    form {
-        margin: 0 200px 0 200px;
-    }
+form {
+    margin: 0 200px 0 200px;
 }
+}
+
 
 @media screen and (min-width: 992px) {
     .nav__collapse {

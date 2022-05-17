@@ -21,14 +21,15 @@
     text-align: center;
 }
 
+.headernavsec {
+    @extend .estilo__imgbackground;
+        background-attachment: fixed;
+        height: $height-nav;
+}
+
 .caja__header {
-    background-image: url(../img/principal.webp);
     height: 100vh;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
     background-attachment: fixed;
-    background-repeat: no-repeat;
 }
 
 .nuevo__caja {
@@ -53,27 +54,9 @@
     margin: $margin-1;
 }
 
-.header__cajacelulares {
-    background-image: url(../img/principal__celulares.webp);
-    background-attachment: fixed;
 
-}
-
-.header__cajaaccesorios {
-    background-image: url(../img/accesorios-img.webp);
-    background-attachment: fixed;
-}
-
-.header__cajacontacto {
-    background-image: url(../img/contacto-img.jpg);
-    background-attachment: fixed;
-}
-
-.header__cajacarrito {
-    background-image: url(../img/carrito-img.jpg);
-    background-attachment: fixed;
-}
-
-.header__cajaheight {
-    height: $height-nav;
+@each $header in cajaindex, cajacelulares, cajaaccesorios, cajacontacto, cajacarrito {
+    .#{$header}-header {
+        background-image: url(../img/#{$header}.jpg);
+    }
 }
