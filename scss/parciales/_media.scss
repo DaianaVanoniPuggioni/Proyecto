@@ -1,3 +1,22 @@
+.productos__caja {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.productos__caja {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+iframe {
+    width: 100%;
+}
+
+.buscado__carousel {
+    display: none;
+}
+
 @media screen and (min-width: 780px) {
     .celulares__caja {
         background-attachment: fixed;
@@ -19,11 +38,34 @@
 form {
     margin: 0 200px 0 200px;
 }
+
+.productos__caja {
+    grid-template-columns: repeat(2, 1fr);
 }
+.buscado__carousel {
+    display: block;
+}
+
+}
+
 
 
 @media screen and (min-width: 992px) {
     .nav__collapse {
         justify-content: flex-end;
+    }
+
+    .productos__caja {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1420px) {
+    .nav__collapse {
+        justify-content: flex-end;
+    }
+
+    .productos__caja {
+        grid-template-columns: repeat(4, 1fr);
     }
 }

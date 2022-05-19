@@ -108,25 +108,39 @@ section {
 footer {
   text-align: center;
   background-color: #000;
-  padding: 10px;
-  color: #f0f8ff;
+  padding: 50px;
+  color: grey;
   margin-top: 32px;
 }
 
-footer span {
+footer .copy {
+  margin-top: 40px;
+}
+
+footer .copy {
   font-size: 16px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  footer span {
+  footer .copy {
     font-size: calc( 16px +  num(12px)-num(16px) *  (100vw - 768px) /  num(1024px)-num(768px));
   }
 }
 
 @media (min-width: 1024px) {
-  footer span {
+  footer .copy {
     font-size: 12px;
   }
+}
+
+.footer__nav {
+  margin: 10px 0 40px 0;
+}
+
+.footer__nav a {
+  padding: 25px;
+  text-decoration: none;
+  color: grey;
 }
 
 /* SERVICIOS*/
@@ -146,24 +160,60 @@ footer span {
 
 /*CARDS*/
 .card {
+  width: 80%;
+  padding: 3px 0 3px 0;
   margin-top: 32px;
   -webkit-box-shadow: 2px 6px 8px 0 #9090972e;
           box-shadow: 2px 6px 8px 0 #9090972e;
   border-radius: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.card img {
+.imgproducto {
+  width: 150px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
   -webkit-transition-delay: .1s;
           transition-delay: .1s;
 }
 
-.card img:hover {
+.imgproducto:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
 
+.productos__texto {
+  width: 100%;
+  text-align: center;
+}
+
+/*
+.card {
+    margin-top: $margin-1;
+    box-shadow: 2px 6px 8px 0 #9090972e;
+    border-radius: 0;
+
+   
+}
+}
+
+*/
 .div__h1 h1 {
   font-size: 32px;
 }
@@ -205,6 +255,30 @@ td img {
   height: auto;
 }
 
+iframe {
+  min-width: 100%;
+}
+
+.productos__caja {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.productos__caja {
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+}
+
+iframe {
+  width: 100%;
+}
+
 @media screen and (min-width: 780px) {
   .celulares__caja {
     background-attachment: fixed;
@@ -221,6 +295,10 @@ td img {
   form {
     margin: 0 200px 0 200px;
   }
+  .productos__caja {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -228,6 +306,22 @@ td img {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+  }
+  .productos__caja {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1420px) {
+  .nav__collapse {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .productos__caja {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
 }
 /*# sourceMappingURL=prueba.css.map */
