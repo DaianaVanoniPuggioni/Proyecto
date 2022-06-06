@@ -172,6 +172,53 @@ td img {
   background-image: url("https://static.vecteezy.com/system/resources/previews/002/716/573/non_2x/perforated-dark-background-with-metal-inserts-vector.jpg");
   background-position: right; }
 
+/*BOTON FINALIZAR */
+.finalizar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  transition: all 0.5s ease;
+  opacity: 0;
+  visibility: hidden; }
+
+#btn-finalizar:checked ~ .finalizar {
+  opacity: 1;
+  visibility: visible; }
+
+.contenedor-finalizar {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  box-shadow: 1px 5px 25px rgba(0, 0, 0, 0.358);
+  transition: all 0.5s ease;
+  position: relative; }
+  .contenedor-finalizar header {
+    padding: 10px;
+    background: #000;
+    color: #f0f8ff;
+    text-align: center; }
+  .contenedor-finalizar label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #f0f8ff;
+    cursor: pointer;
+    font-size: 15px; }
+
+#btn-finalizar {
+  display: none; }
+
+.label-finalizar {
+  background-color: #000;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: #f0f8ff;
+  cursor: pointer; }
+
+.contenido-finalizar img {
+  width: 100%; }
+
 .productos__caja {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -199,14 +246,23 @@ iframe {
   .productos__caja {
     grid-template-columns: repeat(2, 1fr); }
   .buscado__carousel {
-    display: block; } }
+    display: block; }
+  .finalizar {
+    top: 10%;
+    left: 20%; }
+  .contenedor-finalizar {
+    width: 500px;
+    height: auto;
+    margin: 0; } }
 
 /*DISPOSITIVOS MAYORES A 992PX*/
 @media screen and (min-width: 992px) {
   .nav__collapse {
     justify-content: flex-end; }
   .productos__caja {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .finalizar {
+    left: 30%; } }
 
 /*DISPOSITIVOS MAYORES A 1420PX*/
 @media screen and (min-width: 1420px) {
