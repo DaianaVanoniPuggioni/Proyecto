@@ -81,6 +81,7 @@ h3 {
 section {
   padding: 32px; }
 
+/* FOOTER*/
 footer {
   text-align: center;
   background-color: #000;
@@ -93,7 +94,7 @@ footer {
       font-size: 16px; }
     @media (min-width: 768px) and (max-width: 1024px) {
       footer .copy {
-        font-size: calc( 16px +  num(12px)-num(16px) *  (100vw - 768px) /  num(1024px)-num(768px)); } }
+        font-size: calc(16px + num(12px)-num(16px) * (100vw - 768px) / num(1024px)-num(768px)); } }
     @media (min-width: 1024px) {
       footer .copy {
         font-size: 12px; } }
@@ -102,7 +103,7 @@ footer {
   margin: 10px 0 40px 0; }
 
 .footer__nav a {
-  padding: 25px;
+  margin: 25px;
   text-decoration: none;
   color: grey; }
 
@@ -139,12 +140,13 @@ footer {
   width: 100%;
   text-align: center; }
 
+/*TITULOS*/
 .div__h1 h1 {
   font-size: 32px; }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .div__h1 h1 {
-    font-size: calc( 32px +  num(40px)-num(32px) *  (100vw - 768px) /  num(1024px)-num(768px)); } }
+    font-size: calc(32px + num(40px)-num(32px) * (100vw - 768px) / num(1024px)-num(768px)); } }
 
 @media (min-width: 1024px) {
   .div__h1 h1 {
@@ -156,11 +158,12 @@ footer {
     font-size: 20px; }
   @media (min-width: 768px) and (max-width: 1024px) {
     .div__h1 p {
-      font-size: calc( 20px +  num(25px)-num(20px) *  (100vw - 768px) /  num(1024px)-num(768px)); } }
+      font-size: calc(20px + num(25px)-num(20px) * (100vw - 768px) / num(1024px)-num(768px)); } }
   @media (min-width: 1024px) {
     .div__h1 p {
       font-size: 25px; } }
 
+/*TABLE */
 td img {
   width: 100px;
   height: auto; }
@@ -181,6 +184,7 @@ iframe {
 .buscado__carousel {
   display: none; }
 
+/*DISPOSITIVOS MAYORES A 780PX*/
 @media screen and (min-width: 780px) {
   .celulares__caja {
     background-attachment: fixed; }
@@ -197,12 +201,14 @@ iframe {
   .buscado__carousel {
     display: block; } }
 
+/*DISPOSITIVOS MAYORES A 992PX*/
 @media screen and (min-width: 992px) {
   .nav__collapse {
     justify-content: flex-end; }
   .productos__caja {
     grid-template-columns: repeat(3, 1fr); } }
 
+/*DISPOSITIVOS MAYORES A 1420PX*/
 @media screen and (min-width: 1420px) {
   .productos__caja {
     grid-template-columns: repeat(4, 1fr); } }

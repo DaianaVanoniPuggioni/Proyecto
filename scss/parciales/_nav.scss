@@ -1,6 +1,6 @@
 /*NAV Y HEADER IMAGENES*/
 .nav__logo {
-    width:  130px;
+    width: 130px;
     height: auto;
     margin: 20px;
 }
@@ -24,8 +24,8 @@
 
 .headernavsec {
     @extend .estilo__imgbackground;
-        background-attachment: fixed;
-        height: $height-nav;
+    background-attachment: fixed;
+    height: $height-nav;
 }
 
 .caja__header {
@@ -56,7 +56,11 @@
 }
 
 
-@each $header in cajaindex, cajacelulares, cajaaccesorios, cajacontacto, cajacarrito {
+@each $header in cajaindex,
+cajacelulares,
+cajaaccesorios,
+cajacontacto,
+cajacarrito {
     .#{$header}-header {
         background-image: url(../img/#{$header}.jpg);
     }

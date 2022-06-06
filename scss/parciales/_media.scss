@@ -14,6 +14,8 @@ iframe {
     display: none;
 }
 
+/*DISPOSITIVOS MAYORES A 780PX*/
+
 @media screen and (min-width: 780px) {
     .celulares__caja {
         background-attachment: fixed;
@@ -32,17 +34,21 @@ iframe {
         height: 50vh;
     }
 
-form {
-    margin: 0 200px 0 200px;
+    form {
+        margin: 0 200px 0 200px;
+    }
+
+    .productos__caja {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .buscado__carousel {
+        display: block;
+    }
 }
 
-.productos__caja {
-    grid-template-columns: repeat(2, 1fr);
-}
-.buscado__carousel {
-    display: block;
-}
-}
+
+/*DISPOSITIVOS MAYORES A 992PX*/
 
 @media screen and (min-width: 992px) {
     .nav__collapse {
@@ -54,8 +60,10 @@ form {
     }
 }
 
+/*DISPOSITIVOS MAYORES A 1420PX*/
+
 @media screen and (min-width: 1420px) {
-  
+
     .productos__caja {
         grid-template-columns: repeat(4, 1fr);
     }
