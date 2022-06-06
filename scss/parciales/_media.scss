@@ -48,15 +48,16 @@ iframe {
 
     .finalizar {
         top: 10%;
-        left:20%;
-       
+        left: 20%;
+
     }
+
     .contenedor-finalizar {
         width: 500px;
         height: auto;
         margin: 0;
-        
-}
+
+    }
 }
 
 
@@ -70,9 +71,10 @@ iframe {
     .productos__caja {
         grid-template-columns: repeat(3, 1fr);
     }
+
     .finalizar {
-        left:30%;
-       
+        left: 30%;
+
     }
 }
 
