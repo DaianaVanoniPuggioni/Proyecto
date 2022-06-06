@@ -24,24 +24,24 @@
   height: 100vh; }
 
 .caja__header {
-  height: 100vh;
+  height: 80vh;
   background-attachment: fixed; }
 
 .nuevo__caja {
   background-image: url(../img/nuevo-mobile.jpg);
-  height: 200px;
+  height: 300px;
   background-position: center;
   margin: 32px; }
 
 .accesorios__caja {
   background-image: url(../img/accesorios-img2-mobile.jpg);
-  height: 200px;
+  height: 300px;
   background-position: center;
   margin: 32px; }
 
 .celulares__caja {
   background-image: url(../img/tienda-celulares-mobile.jpg);
-  height: 300px;
+  height: 400px;
   background-position: left bottom;
   background-attachment: scroll;
   margin: 32px; }
@@ -60,6 +60,9 @@
 
 .cajacarrito-header {
   background-image: url(../img/cajacarrito.jpg); }
+
+.nav-link {
+  text-align: end; }
 
 /*GENERALES*/
 * {
@@ -168,12 +171,9 @@ td img {
 
 .productos__caja {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(1, 1fr);
   align-items: center;
   justify-items: center; }
-
-.productos__caja {
-  grid-template-columns: repeat(1, 1fr); }
 
 iframe {
   width: 100%; }
@@ -204,7 +204,5 @@ iframe {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (min-width: 1420px) {
-  .nav__collapse {
-    justify-content: flex-end; }
   .productos__caja {
     grid-template-columns: repeat(4, 1fr); } }

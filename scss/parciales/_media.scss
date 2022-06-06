@@ -1,13 +1,10 @@
 .productos__caja {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
     align-items: center;
     justify-items: center;
 }
 
-.productos__caja {
-    grid-template-columns: repeat(1, 1fr);
-}
 
 iframe {
     width: 100%;
@@ -45,10 +42,7 @@ form {
 .buscado__carousel {
     display: block;
 }
-
 }
-
-
 
 @media screen and (min-width: 992px) {
     .nav__collapse {
@@ -61,10 +55,7 @@ form {
 }
 
 @media screen and (min-width: 1420px) {
-    .nav__collapse {
-        justify-content: flex-end;
-    }
-
+  
     .productos__caja {
         grid-template-columns: repeat(4, 1fr);
     }
