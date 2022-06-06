@@ -26,7 +26,7 @@ Posee un formulario para realizar consultas y recibir información.
 -Modifiqué el título de la página: DVP | Contacto.
 
 carrito.html:
- Tiene una tabla simulando un carrito con un botón para finalizar la compra. 
+ Tiene una tabla simulando un carrito con un botón para finalizar la compra donde al hacer click tiene una animación con un gif. 
  -Descripción: Añadí en la etiqueta meta name description el siguiente párrafo: "Hacé tus compras en 3, 6 y 12 cuotas sin interes con tu tarjeta de crédito, todos los días de la semana. Ver más".
 -Palabras clave: Añadí en la etiqueta meta name keywords las siguientes palabras: "CUOTAS SIN INTERES, CUOTAS, AMERICAN EXPRESS, VISA, MASTERCARD, CELULARES, DVP".
 -Modifiqué el título de la página: DVP | Carrito.
