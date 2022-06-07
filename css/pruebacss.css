@@ -170,7 +170,12 @@ td img {
 
 .fondo__carousel {
   background-image: url("https://static.vecteezy.com/system/resources/previews/002/716/573/non_2x/perforated-dark-background-with-metal-inserts-vector.jpg");
-  background-position: right; }
+  background-position: right;
+  height: 300px; }
+
+.img__carousel {
+  height: 300px;
+  width: 300px; }
 
 /*BOTON FINALIZAR */
 .finalizar {
@@ -253,7 +258,12 @@ iframe {
   .contenedor-finalizar {
     width: 500px;
     height: auto;
-    margin: 0; } }
+    margin: 0; }
+  .fondo__carousel {
+    height: auto; }
+  .img__carousel {
+    width: 400px;
+    height: auto; } }
 
 /*DISPOSITIVOS MAYORES A 992PX*/
 @media screen and (min-width: 992px) {
